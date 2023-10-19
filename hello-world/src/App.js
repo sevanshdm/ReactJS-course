@@ -9,13 +9,15 @@ import Greet from './components/Greet'
 //import { Greet } from './components/Greet'
 
 import Welcome from './components/Welcome'
+import Hello from './components/Hello'
 
 // The App component represents the view which you see in the browser.
 function App() {
   return (
     <div className="App">
-      <Greet/>
-      <Welcome/>
+      {/* <Greet/>
+      <Welcome/> */}
+      <Hello/>
     </div>
   );
 }

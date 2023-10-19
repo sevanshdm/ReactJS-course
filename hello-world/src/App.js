@@ -1,6 +1,9 @@
+// This file is responsible for the html displayed in the browser.
+
 import logo from './logo.svg';
 import './App.css';
 
+// The App component represents the view which you see in the browser.
 function App() {
   return (
     <div className="App">

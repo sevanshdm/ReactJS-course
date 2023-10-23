@@ -13,11 +13,16 @@ import Welcome from './components/Welcome'
 import Hello from './components/Hello'
 import Message from './components/Message'
 import Counter from './components/Counter'
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
 
 // The App component represents the view which you see in the browser.
 function App() {
   return (
     <div className="App">
+      <FunctionClick/>
+      <ClassClick/>
+
       {/* <Counter/> */}
 
       {/* <Message/> */}
@@ -27,9 +32,9 @@ function App() {
       </Greet>
       <Greet name="Gingy" epithet="The Tasty One"/>
         <button>Action</button>*/}
-      <Greet name="Farquaad" epithet="The Midget"/> 
+      {/* <Greet name="Farquaad" epithet="The Midget"/> 
 
-      <Welcome name="Donkey" epithet="The Annoying One"/>
+      <Welcome name="Donkey" epithet="The Annoying One"/> */}
       {/* <Welcome name="Gingy" epithet="The Tasty One"/>
       <Welcome name="Farquaad" epithet="The Midget"/>  */}
 

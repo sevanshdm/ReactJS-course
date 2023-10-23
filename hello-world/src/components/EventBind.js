@@ -23,7 +23,7 @@ class EventBind extends Component {
 
     // This is another good way to Event Bind. along with line 37. It is experimental, however.
     clickHandler = () => {
-      this. setState({
+      this.setState({
         message: 'Goodbye'
       })
     }

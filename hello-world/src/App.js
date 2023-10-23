@@ -18,20 +18,20 @@ import Counter from './components/Counter'
 function App() {
   return (
     <div className="App">
-      <Counter/>
+      {/* <Counter/> */}
 
       {/* <Message/> */}
       
-      {/* <Greet name="Donkey" epithet="The Annoying One"> These props(name and epithet) values are retrieved through the parameter of the Greet function  */}
+      {/*<Greet name="Donkey" epithet="The Annoying One"> These props(name and epithet) values are retrieved through the parameter of the Greet function  */}
         {/* <p>This is children props</p> 
       </Greet>
       <Greet name="Gingy" epithet="The Tasty One"/>
-        <button>Action</button>
-      <Greet name="Farquaad" epithet="The Midget"/>
+        <button>Action</button>*/}
+      <Greet name="Farquaad" epithet="The Midget"/> 
 
       <Welcome name="Donkey" epithet="The Annoying One"/>
-      <Welcome name="Gingy" epithet="The Tasty One"/>
-      <Welcome name="Farquaad" epithet="The Midget"/> */}
+      {/* <Welcome name="Gingy" epithet="The Tasty One"/>
+      <Welcome name="Farquaad" epithet="The Midget"/>  */}
 
       {/* <Hello/> */}
     </div>

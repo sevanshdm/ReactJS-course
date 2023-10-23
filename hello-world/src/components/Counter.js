@@ -18,10 +18,11 @@ class Counter extends Component {
         //         count: this.state.count + 1
         //     }, 
         //     ()=>{
-        //         console.log('Callback value', this.state.count)
+        //         console.log('Callback value', this.state.count) Whevener you need to execute some code after the state has been changed, place it within this callback funct
         //     }
         // )
 
+        // When you need to change state based on the previous state, pass in a function as an argument instead of the regular object.
         this.setState((prevState, props)=> ({
             count: prevState.count + 1
         }))

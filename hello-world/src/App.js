@@ -24,14 +24,18 @@ import './App.css';
 // import './appStyles.css'
 // import styles from './appStyles.module.css'
 // import Form from './components/Form';
-import LifecycleA from './components/LifecycleA.js';
+// import LifecycleA from './components/LifecycleA.js';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
 
 // The App component represents the view which you see in the browser.
 function App() {
   return (
     <div className="App">
+      <Table/>
+      {/* <FragmentDemo/> */}
 
-      <LifecycleA/>
+      {/* <LifecycleA/> */}
 
       {/* <Form/> */}
 

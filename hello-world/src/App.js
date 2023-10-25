@@ -9,7 +9,7 @@ import './App.css';
 //named export below, the name has to match what was exported
 //import { Greet } from './components/Greet'
 
-import FRParentInput from './components/FRParentInput';
+import PortalDemo from './components/PortalDemo';
 
 // The App component represents the view which you see in the browser.
 function App() {
@@ -17,7 +17,7 @@ function App() {
     
     <div className="App">
 
-      <FRParentInput/>
+      <PortalDemo/>
       
       {/*<Greet name="Donkey" epithet="The Annoying One"> These props(name and epithet) values are retrieved through the parameter of the Greet function  */}
         {/* <p>This is children props</p> 

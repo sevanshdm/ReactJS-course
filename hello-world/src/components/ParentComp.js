@@ -1,6 +1,6 @@
-import React, { Component, PureComponent } from 'react'
-import RegComp from './RegComp'
-import PureComp from './PureComp'
+//import React, { Component, PureComponent } from 'react'
+// import RegComp from './RegComp'
+// import PureComp from './PureComp'
 import MemoComp from './MemoComp'
 
 

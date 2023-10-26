@@ -9,10 +9,8 @@ import './App.css';
 //named export below, the name has to match what was exported
 //import { Greet } from './components/Greet'
 
-import ClickCounterTwo from './components/ClickCounterTwo';
-import HoverCounterTwo from './components/HoverCounterTwo';
-import User from './components/User';
-import CounterTwo from './components/CounterTwo';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
 
 // The App component represents the view which you see in the browser.
 function App() {
@@ -20,8 +18,13 @@ function App() {
     
     <div className="App">
 
+      {/* Context, UserProvider is from userContext.js*/}
+      <UserProvider value="Shrek"> {/*This is Step 2(Provide a context value) This value can be consumed in any decendant components*/}
+        <ComponentC/> {/*Step 3 is found in ComponentF.js*/}
+      </UserProvider>
+
       {/* Render Props */}
-      <CounterTwo 
+      {/* <CounterTwo 
          render={(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount}/> //This is the render prop as stated in CounterTwo.js
           )}
@@ -30,7 +33,7 @@ function App() {
          render={(count, incrementCount) => (
           <HoverCounterTwo count={count} incrementCount={incrementCount}/>
           )}
-      />      
+      />       */}
       {/* <ClickCounterTwo/>
       <HoverCounterTwo/>
       <User render={ (isLoggedIn) => isLoggedIn ? 'Shrek' : 'Guest' } /> */}

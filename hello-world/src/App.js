@@ -9,16 +9,26 @@ import './App.css';
 //named export below, the name has to match what was exported
 //import { Greet } from './components/Greet'
 
-import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
 
 // The App component represents the view which you see in the browser.
 function App() {
   return (
     
     <div className="App">
+      <ErrorBoundary>
+        <Hero heroName="Shrek"></Hero>
+      </ErrorBoundary>
 
-      <PortalDemo/>
+      <ErrorBoundary>
+        <Hero heroName="Donkey"></Hero>
+      </ErrorBoundary>
       
+      <ErrorBoundary>
+        <Hero heroName="Farquaad"></Hero>
+      </ErrorBoundary>
+
       {/*<Greet name="Donkey" epithet="The Annoying One"> These props(name and epithet) values are retrieved through the parameter of the Greet function  */}
         {/* <p>This is children props</p> 
       </Greet>

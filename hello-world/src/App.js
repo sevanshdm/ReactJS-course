@@ -9,13 +9,17 @@ import './App.css';
 //named export below, the name has to match what was exported
 //import { Greet } from './components/Greet'
 
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+
 // The App component represents the view which you see in the browser.
 function App() {
   return (
     
     <div className="App">
-
-      
+      {/* Render Props */}
+      <ClickCounterTwo/>
+      <HoverCounterTwo/>
 
       {/* Higher Order (HOC) */}
       {/*<ClickCounter name="Shrek"/> If you input a prop here, it's passed to the HOC but not to the component that is wrapped*/}

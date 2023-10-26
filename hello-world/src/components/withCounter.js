@@ -3,7 +3,7 @@
 import React from 'react'
 
 // It's a function that accepts the original component and returns a new component.
-const withCounter = WrappedComponent => { // was UpdatedComponent = OriginalComponent 
+const withCounter = (WrappedComponent, incrementNumber) => { // was UpdatedComponent = OriginalComponent 
     class withCounter extends React.Component { // was NewComponent extends React.Component
         constructor(props) {
             super(props)
@@ -14,8 +14,8 @@ const withCounter = WrappedComponent => { // was UpdatedComponent = OriginalComp
         }
     
         incrementCount = () => {
-            this.setState(prevState => {
-                return {count: prevState.count + 1}
+            this.setState(prevState => {         //this comes from the second param passed in the export from either ClickCounter or HoverCounter.js
+                return {count: prevState.count + incrementNumber}
             })
         }
 
@@ -23,6 +23,9 @@ const withCounter = WrappedComponent => { // was UpdatedComponent = OriginalComp
             return <WrappedComponent
                 count={this.state.count}
                 incrementCount={this.incrementCount}
+
+                //Spread operator, this passes down what ever remaining props have been specified (From App.js)
+                {...this.props} 
             />
         }
     }

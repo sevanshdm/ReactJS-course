@@ -23,12 +23,12 @@ class ClickCounter extends Component {
         const {count, incrementCount} = this.props
         return (
             <button onClick={incrementCount}>
-            Clicked {count} times
+            {this.props.name} Clicked {count} times
             </button>               
         )   
     }
 }
 
 //While exporting, call the updated component function, passing in the clickcounter component. You're now exporting the HOC
-export default withCounter(ClickCounter)
+export default withCounter(ClickCounter, 5)
             //(was Updated Component) withCounter is from withCounter.js

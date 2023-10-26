@@ -9,18 +9,18 @@ import './App.css';
 //named export below, the name has to match what was exported
 //import { Greet } from './components/Greet'
 
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
-
 // The App component represents the view which you see in the browser.
 function App() {
   return (
     
     <div className="App">
 
+      
+
       {/* Higher Order (HOC) */}
-      <ClickCounter/>
-      <HoverCounter/>
+      {/*<ClickCounter name="Shrek"/> If you input a prop here, it's passed to the HOC but not to the component that is wrapped*/}
+                                   {/*To fix this you need to pass the remaining props to the wrapped comp using the spread operator in the HOC */}
+      {/* <HoverCounter/>  */}
 
       {/* <ErrorBoundary>
         <Hero heroName="Shrek"></Hero>

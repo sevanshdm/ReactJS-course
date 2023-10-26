@@ -30,5 +30,5 @@ class HoverCounter extends Component {
 }
 
 //While exporting, call the updated component function, passing in the HoverCounter component. You're now exporting the HOC
-export default withCounter(HoverCounter)
+export default withCounter(HoverCounter, 10)
             //(was Updated Component) withCounter is from withCounter.js

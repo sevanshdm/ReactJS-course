@@ -11,15 +11,29 @@ import './App.css';
 
 import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User';
+import CounterTwo from './components/CounterTwo';
 
 // The App component represents the view which you see in the browser.
 function App() {
   return (
     
     <div className="App">
+
       {/* Render Props */}
-      <ClickCounterTwo/>
+      <CounterTwo 
+         render={(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount}/> //This is the render prop as stated in CounterTwo.js
+          )}
+      />
+      <CounterTwo 
+         render={(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount}/>
+          )}
+      />      
+      {/* <ClickCounterTwo/>
       <HoverCounterTwo/>
+      <User render={ (isLoggedIn) => isLoggedIn ? 'Shrek' : 'Guest' } /> */}
 
       {/* Higher Order (HOC) */}
       {/*<ClickCounter name="Shrek"/> If you input a prop here, it's passed to the HOC but not to the component that is wrapped*/}

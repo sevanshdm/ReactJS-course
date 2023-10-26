@@ -9,15 +9,20 @@ import './App.css';
 //named export below, the name has to match what was exported
 //import { Greet } from './components/Greet'
 
-import Hero from './components/Hero';
-import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 // The App component represents the view which you see in the browser.
 function App() {
   return (
     
     <div className="App">
-      <ErrorBoundary>
+
+      {/* Higher Order pt1 */}
+      <ClickCounter/>
+      <HoverCounter/>
+
+      {/* <ErrorBoundary>
         <Hero heroName="Shrek"></Hero>
       </ErrorBoundary>
 
@@ -27,13 +32,13 @@ function App() {
       
       <ErrorBoundary>
         <Hero heroName="Farquaad"></Hero>
-      </ErrorBoundary>
-
+      </ErrorBoundary> */}
+      {/* 
       {/*<Greet name="Donkey" epithet="The Annoying One"> These props(name and epithet) values are retrieved through the parameter of the Greet function  */}
-        {/* <p>This is children props</p> 
+      {/* <p>This is children props</p> 
       </Greet>
       <Greet name="Gingy" epithet="The Tasty One"/>
-        <button>Action</button>*/}
+        <button>Action</button> */}
       {/* <Greet name="Farquaad" epithet="The Midget"/> 
 
       <Welcome name="Donkey" epithet="The Annoying One"/> */}

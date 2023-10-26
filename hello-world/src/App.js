@@ -18,7 +18,7 @@ function App() {
     
     <div className="App">
 
-      {/* Higher Order pt1 */}
+      {/* Higher Order (HOC) */}
       <ClickCounter/>
       <HoverCounter/>
 

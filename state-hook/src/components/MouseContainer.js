@@ -1,5 +1,5 @@
 // This is a container function file that removes the X and Y display. But(doesn't remove the event or data.)
-// See HookMouse.js lines 22-24
+// See HookMouse.js lines 22-26
 
 import React, {useState} from 'react'
 import HookMouse from './HookMouse'

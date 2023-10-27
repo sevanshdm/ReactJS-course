@@ -1,4 +1,6 @@
-        //Import state hooks
+// This file shows the basics of how to use state hooks
+
+//Import useState hook
 import React, {useState} from 'react'
 
 function HookCounter() {

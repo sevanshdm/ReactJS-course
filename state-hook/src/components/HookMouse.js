@@ -18,6 +18,14 @@ function HookMouse() {
     useEffect(() => {
         console.log('useEffect Called')
         window.addEventListener('mousemove', logMousePosition)
+
+        //When you want to execute some component cleanup code, you include it in a function and return that function from the function
+        // passed to useEffect.
+        return () => {
+            console.log('Component unmounting code')
+            window.removeEventListener('mousemove', logMousePosition)
+        }
+
     },[]) //this empty array tells React that this effect doesn't depend on any props or state. It's only called once on the inital render.
 
     return (

@@ -19,6 +19,10 @@ class ClassMouse extends Component {
     componentDidMount() {  
         window.addEventListener('mousemove', this.logMousePosition)
     }
+    // Remove event listener functionality
+    componentWillUnmount() {
+        window.removeEventListener('mousemove', this.logMousePosition)
+    }
     
     render() {
         return (

@@ -4,27 +4,32 @@ import axios from 'axios'
 
 function DataFetching() {
 
-    const [posts, setPosts] = useState([])
+    //state variables
+    const [post, setPost] = useState({})
 
-    useEffect(() => {
-        axios.get('https://jsonplaceholder.typicode.com/posts') //this returns a promise
+    const [id, setId] = useState(1)
+
+    useEffect(() => {                                      //append post id
+        axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`) //this returns a promise
             .then(res => {
                 console.log(res)
-                setPosts(res.data)
+                setPost(res.data)
             })
             .catch(err => {
                 console.log(err)
             })
-    }, []) // empty dependeny array prevents an infinite loop of fetching data.
+    }, [id]) // empty dependency array prevents an infinite loop of fetching data. [id] for when you want to rerender whenever the id value changes
 
     return (
         <div>
-            <ul>
+            <input type='text' value={id} onChange={e => setId(e.target.value)}/>
+            <div>{post.title}</div>
+            {/* <ul>
                 {           // for each post, return a list item where key = post.id and inner html is post.title
                     posts.map(post => (
                         <li key={post.id}>{post.title}</li>
                 ))}
-            </ul>
+            </ul> */}
         </div>
     )
 }

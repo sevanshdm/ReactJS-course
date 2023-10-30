@@ -3,7 +3,7 @@ import './App.css';
 //import this for context ex
 // import ComponentC from './components/ComponentC';
 
-import CounterOne from './components/CounterOne';
+import CounterTwo from './components/CounterTwo'
 
 // Context
 //Step 1 create the context
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
 
-      <CounterOne/>
+      <CounterTwo/>
 
       {/*Context... This is step 2 go to ComponentE.js for step 3*/}
       {/* <UserContext.Provider value={'Shrek'}>

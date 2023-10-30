@@ -1,4 +1,4 @@
-// This file shows how to use "useReducer" hook
+// This file shows how to use "useReducer" hook for simple state and actions
 
 // import the hooks
 import React, {useReducer} from 'react'
@@ -24,7 +24,7 @@ const reducer = (state, action) => {
 function CounterOne() {
     // (reducer funct, initial state)
     const [count, dispatch] = useReducer(reducer, initialState) //useReducer returns the current state as a pair of values that you get a hold of using array destructuring syntax
-                // dispatch method allows you to exeute the code corresponding to a particular action.
+                // dispatch method allows you to execute the code corresponding to a particular action.
     return (
         <div>
             <div>Count - {count}</div>

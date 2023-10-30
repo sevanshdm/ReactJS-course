@@ -26,7 +26,7 @@ function DataFetchingOne() {
     },[])
     return (
         <div>
-            {loading ? 'loading' : post.title}
+            {loading ? 'Loading' : post.title}
             {error ? error : null}
         </div>
     )

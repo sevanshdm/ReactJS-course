@@ -1,13 +1,17 @@
 import './App.css';
-import DocTitleOne from './components/DocTitleOne';
-import DocTitleTwo from './components/DocTitleTwo';
+import UserForm from './components/UserForm';
 
 function App() {
   return (
     <div className="App">
 
-      <DocTitleOne/>
-      <DocTitleTwo/>
+      {/* <DocTitleOne/>
+      <DocTitleTwo/> */}
+
+      {/* <CounterOne/>
+      <CounterTwo/> */}
+
+      <UserForm/>
 
     </div>
   );
